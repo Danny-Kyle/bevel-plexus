@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
+import Dashboard from "./components/Dashboard";
+import Payment from "./components/Payment";
+import Recipients from "./components/Recipients";
+import Transactions from "./components/Transactions";
+import Accounts from "./components/Accounts";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-[#f5f6f9]">
+      <Router>
+        <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/payment" element={<Payment />} />
+            <Route path="/recipients" element={<Recipients />} />
+            <Route path="/transactions" element={<Transactions />} />
+            <Route path="/accounts" element={<Accounts />} />
+          </Routes>
+      </Router>
     </div>
   );
 }

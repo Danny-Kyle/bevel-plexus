@@ -9,7 +9,7 @@ import Accounts from "./components/Accounts";
 
 function App() {
   return (
-    <div className="bg-[#f5f6f9]">
+    <div className="bg-[#f5f6f9] min-h-screen">
       <Router>
         <ScrollToTop />
           <Routes>

@@ -9,7 +9,7 @@ export const Box = ({ placeholder, small, src, currency }) => {
     <label className="flex flex-row justify-between rounded-lg items-center bg-white h-16 shadow-md px-2 py-3 w-[100%] text-black">
       <div className="flex flex-col">
         <small className="text-blue-400 capitalize">{small}</small>
-        <input type="text" placeholder={placeholder} className="" />
+        <input type="text" placeholder={placeholder} className="rounded-full border border-transparent p-2" />
       </div>
       <hr className="bg-black h-12 w-[1px]" />
       <p className="flex flex-row gap-x-1">

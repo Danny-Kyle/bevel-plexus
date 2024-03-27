@@ -6,7 +6,7 @@ import brlflag from "../../../images/brazil-flag.svg";
 
 export const Box = ({ placeholder, small, src, currency }) => {
   return (
-    <label className="flex flex-row justify-between rounded-lg items-center bg-white h-16 shadow-md px-2 py-3 w-[100%] text-black">
+    <section className="flex flex-row justify-between rounded-lg items-center bg-white h-16 shadow-md px-2 py-3 w-[100%] text-black">
       <div className="flex flex-col">
         <small className="text-blue-400 capitalize">{small}</small>
         <input type="text" placeholder={placeholder} className="rounded-full border border-transparent p-2" />
@@ -19,13 +19,9 @@ export const Box = ({ placeholder, small, src, currency }) => {
           <MdArrowDropDown />
         </span>
       </p>
-    </label>
+    </section>
   );
 };
-
-const mouseOver = () => {};
-
-const MouseOut = () => {};
 
 const DashBar = () => {
   return (
